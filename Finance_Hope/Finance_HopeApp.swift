@@ -11,7 +11,8 @@ import SwiftUI
 struct Finance_HopeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabsCoordinator()
+                .view()
         }
     }
 }

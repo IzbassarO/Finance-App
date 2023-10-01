@@ -15,6 +15,15 @@
 		A2FB36DE2AC99A43005E7E20 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36DD2AC99A43005E7E20 /* PersistenceController.swift */; };
 		A2FB36E12AC99AAA005E7E20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36E02AC99AAA005E7E20 /* HomeView.swift */; };
 		A2FB36E32AC99ABD005E7E20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36E22AC99ABD005E7E20 /* HomeViewModel.swift */; };
+		A2FB36EA2AC9AF56005E7E20 /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = A2FB36E92AC9AF56005E7E20 /* Stinsen */; };
+		A2FB36EE2AC9B3EB005E7E20 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36ED2AC9B3EB005E7E20 /* StatisticsView.swift */; };
+		A2FB36F32AC9B42A005E7E20 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36F22AC9B42A005E7E20 /* StatisticsViewModel.swift */; };
+		A2FB36F52AC9B434005E7E20 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36F42AC9B434005E7E20 /* AccountView.swift */; };
+		A2FB36F72AC9B446005E7E20 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36F62AC9B446005E7E20 /* AccountViewModel.swift */; };
+		A2FB36F92AC9B5AB005E7E20 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36F82AC9B5AB005E7E20 /* HomeCoordinator.swift */; };
+		A2FB37062AC9B9F1005E7E20 /* StatisticsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB37052AC9B9F1005E7E20 /* StatisticsCoordinator.swift */; };
+		A2FB37082AC9BA17005E7E20 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB37072AC9BA17005E7E20 /* AccountCoordinator.swift */; };
+		A2FB37132AC9BCFC005E7E20 /* TabsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB37122AC9BCFC005E7E20 /* TabsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,14 @@
 		A2FB36DD2AC99A43005E7E20 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		A2FB36E02AC99AAA005E7E20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A2FB36E22AC99ABD005E7E20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A2FB36ED2AC9B3EB005E7E20 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		A2FB36F22AC9B42A005E7E20 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		A2FB36F42AC9B434005E7E20 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A2FB36F62AC9B446005E7E20 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		A2FB36F82AC9B5AB005E7E20 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A2FB37052AC9B9F1005E7E20 /* StatisticsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCoordinator.swift; sourceTree = "<group>"; };
+		A2FB37072AC9BA17005E7E20 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		A2FB37122AC9BCFC005E7E20 /* TabsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FB36EA2AC9AF56005E7E20 /* Stinsen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 				A2FB36CB2AC9999F005E7E20 /* Finance_HopeApp.swift */,
 				A2FB36CD2AC9999F005E7E20 /* ContentView.swift */,
 				A2FB36E52AC9AE22005E7E20 /* Navigation */,
+				A2FB36FA2AC9B683005E7E20 /* Entities */,
 				A2FB36DF2AC99A81005E7E20 /* UI */,
 				A2FB36D92AC999FF005E7E20 /* Database */,
 				A2FB36CF2AC999A1005E7E20 /* Assets.xcassets */,
@@ -90,6 +109,8 @@
 		A2FB36DF2AC99A81005E7E20 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A2FB36EC2AC9B3D8005E7E20 /* Account */,
+				A2FB36EB2AC9B3CF005E7E20 /* Statistics */,
 				A2FB36E42AC9AE0E005E7E20 /* Home */,
 			);
 			path = UI;
@@ -107,8 +128,37 @@
 		A2FB36E52AC9AE22005E7E20 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				A2FB36F82AC9B5AB005E7E20 /* HomeCoordinator.swift */,
+				A2FB37052AC9B9F1005E7E20 /* StatisticsCoordinator.swift */,
+				A2FB37072AC9BA17005E7E20 /* AccountCoordinator.swift */,
+				A2FB37122AC9BCFC005E7E20 /* TabsCoordinator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A2FB36EB2AC9B3CF005E7E20 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB36ED2AC9B3EB005E7E20 /* StatisticsView.swift */,
+				A2FB36F22AC9B42A005E7E20 /* StatisticsViewModel.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		A2FB36EC2AC9B3D8005E7E20 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A2FB36F42AC9B434005E7E20 /* AccountView.swift */,
+				A2FB36F62AC9B446005E7E20 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A2FB36FA2AC9B683005E7E20 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +177,9 @@
 			dependencies = (
 			);
 			name = Finance_Hope;
+			packageProductDependencies = (
+				A2FB36E92AC9AF56005E7E20 /* Stinsen */,
+			);
 			productName = Finance_Hope;
 			productReference = A2FB36C82AC9999F005E7E20 /* Finance_Hope.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +208,9 @@
 				Base,
 			);
 			mainGroup = A2FB36BF2AC9999F005E7E20;
+			packageReferences = (
+				A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */,
+			);
 			productRefGroup = A2FB36C92AC9999F005E7E20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,9 +240,17 @@
 				A2FB36CE2AC9999F005E7E20 /* ContentView.swift in Sources */,
 				A2FB36E32AC99ABD005E7E20 /* HomeViewModel.swift in Sources */,
 				A2FB36CC2AC9999F005E7E20 /* Finance_HopeApp.swift in Sources */,
+				A2FB36F52AC9B434005E7E20 /* AccountView.swift in Sources */,
+				A2FB37082AC9BA17005E7E20 /* AccountCoordinator.swift in Sources */,
+				A2FB36F92AC9B5AB005E7E20 /* HomeCoordinator.swift in Sources */,
+				A2FB37062AC9B9F1005E7E20 /* StatisticsCoordinator.swift in Sources */,
+				A2FB36F72AC9B446005E7E20 /* AccountViewModel.swift in Sources */,
 				A2FB36DC2AC99A10005E7E20 /* Model.xcdatamodeld in Sources */,
+				A2FB36EE2AC9B3EB005E7E20 /* StatisticsView.swift in Sources */,
+				A2FB37132AC9BCFC005E7E20 /* TabsCoordinator.swift in Sources */,
 				A2FB36E12AC99AAA005E7E20 /* HomeView.swift in Sources */,
 				A2FB36DE2AC99A43005E7E20 /* PersistenceController.swift in Sources */,
+				A2FB36F32AC9B42A005E7E20 /* StatisticsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -302,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -392,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:rundfunk47/stinsen.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.13;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2FB36E92AC9AF56005E7E20 /* Stinsen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */;
+			productName = Stinsen;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A2FB36DA2AC99A10005E7E20 /* Model.xcdatamodeld */ = {
