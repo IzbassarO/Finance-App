@@ -10,5 +10,11 @@ import Stinsen
 import SwiftUI
 
 final class StatisticsCoordinator: NavigationCoordinatable {
-    let stack = NavigationStack(initial: \StatisticsCoordinator.start)
+    let stack = NavigationStack(initial: \StatisticsCoordinator.main)
+    
+    @Root var main = makeMain
+    
+    @ViewBuilder func makeMain() -> some View {
+        StatisticsView()
+    }
 }

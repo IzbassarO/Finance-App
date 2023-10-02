@@ -10,6 +10,11 @@ import SwiftUI
 import Stinsen
 
 final class TabsCoordinator: TabCoordinatable {
+    private let managersContainer: ManagersContainer
+
+    init(managersContainer: ManagersContainer) {
+        self.managersContainer = managersContainer
+    }
     lazy var child = TabChild(startingItems: [
         \TabsCoordinator.home,
         \TabsCoordinator.statistics,
@@ -22,7 +27,7 @@ final class TabsCoordinator: TabCoordinatable {
     @Route(tabItem: makeAccountTab) var account = makeAccount
 
     func makeHome() -> NavigationViewCoordinator<HomeCoordinator> {
-        return NavigationViewCoordinator(HomeCoordinator())
+        return NavigationViewCoordinator(HomeCoordinator(managerContainer: managersContainer))
     }
     
     func makeStatistics() -> NavigationViewCoordinator<StatisticsCoordinator> {
@@ -43,14 +48,14 @@ final class TabsCoordinator: TabCoordinatable {
     @ViewBuilder func makeStatisticsTab(isActive: Bool) -> some View {
         VStack {
             Image(systemName: "book")
-            Text("title_home")
+            Text("title_statistics")
         }
     }
     
     @ViewBuilder func makeAccountTab(isActive: Bool) -> some View {
         VStack {
-            Image(systemName: "gear")
-            Text("title_settings")
+            Image(systemName: "person.crop.circle")
+            Text("title_account")
         }
     }
 }

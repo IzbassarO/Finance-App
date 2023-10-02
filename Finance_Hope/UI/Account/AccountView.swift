@@ -8,8 +8,49 @@
 import SwiftUI
 
 struct AccountView: View {
+    @EnvironmentObject var router: AccountCoordinator.Router
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack(spacing: 5) {
+                Form {
+                    Image("Account")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                        .frame(width: 150, height: 150)
+                        .overlay(
+                            Circle()
+                                .stroke(.blue, lineWidth: 1.0)
+                        )
+                    
+                    Section {
+                        HStack {
+                            Text("Name")
+                            Spacer()
+                        }
+                        HStack {
+                            Text("Surname")
+                            Spacer()
+                            Text("")
+                        }
+                    } header: {
+                        Text("details_account").textCase(.none)
+                    }
+                    
+                    Section {
+                        Text("label_currency")
+                    } header: {
+                        Text("title_currency")
+                    }
+                    .onTapGesture {
+                        router.route(to: \.currencyEditor)
+                    }
+                }
+            }
+        }
+        .navigationTitle("Account")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

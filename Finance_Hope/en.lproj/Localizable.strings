@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  Finance_Hope
+
+  Created by Izbassar on 02.10.2023.
+  
+*/
+
+/* HOME */
+"label_home" = "Total";
+"title_home" = "Home";
+"label_payments" = "Payments";
+"label_nopayments" = "You don't have any payments.";
+"label_balance" = "Balance";
+
+/* ADD PAYMENT */
+"title_newpayment" = "New Payment";
+"segment_expenses" = "Expenses";
+"segment_income" = "Income";
+"field_price" = "Price";
+"field_desc" = "Description";
+"field_name" = "Name";
+"hint_necessarily" = "Required";
+"hint_payment" = "After adding payment, it will be added to the history of payments";
+
+/* ABOUT APP */
+"title_links" = "Links";
+
+/* ACCOUNT */
+"title_account" = "Account";
+"details_account" = "Personal Details";
+
+/* STATISTICS */
+"title_statistics" = "Statistics";
+
+/* CURRENCY */
+"title_currency" = "Currency";
+"label_currency" = "Change Currency";
+
+/* WELCOME*/
+"label_hello" = "Hello";
+"label_hello2" = "Welcome to the Financee app that will track all your money expenses and incomes. Good luck!";
+
+/* UNIVERSAL */
+"btn_cancel" = "Cancel";
+"btn_continue" = "Continue";
+"btn_create" = "Create";
+"btn_yes" = "Yes";
+"btn_no" = "No";
+"btn_next" = "Next";
+"hint_search" = "Search";
+"btn_reset" = "Reset";
+"btn_back" = "Back";

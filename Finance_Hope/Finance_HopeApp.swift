@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct Finance_HopeApp: App {
+    // managers
+    private let paymentManager: PaymentsManager
+    
+    private let managersContainer: ManagersContainer
+    
+    init() {
+        self.paymentManager = PaymentsManager()
+        self.managersContainer = ManagersContainer(paymentsManager: paymentManager)
+    }
     var body: some Scene {
         WindowGroup {
-            TabsCoordinator()
+            TabsCoordinator(managersContainer: managersContainer)
                 .view()
         }
     }

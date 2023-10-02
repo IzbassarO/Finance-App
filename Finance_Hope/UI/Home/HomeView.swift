@@ -7,12 +7,69 @@
 
 import SwiftUI
 
+// MARK: fixme
+var isFirstHomeOpen = true
+
 struct HomeView: View {
+    //objects
+    @EnvironmentObject var router: HomeCoordinator.Router
+    @ObservedObject var viewModel: HomeViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                List {
+                    Section {
+                        HomeBalanceView(
+                            totalBalance: viewModel.balance.current,
+                            priceType: viewModel.priceType) {
+                                router.route(to: \.pushToPayment)
+                            }
+                    } header: {
+                        Text("label_home")
+                    }
+                    
+                    Section {
+                        if viewModel.payments.count > 0 {
+                            ForEach(viewModel.payments, id: \.self) { payment in
+                                if payment.isFilterOk(filter: viewModel.selectedFilter) {
+                                    PaymentItemView(
+                                        payment: payment,
+                                        priceType: viewModel.priceType
+                                    )
+                                }
+                            }
+                            .onDelete{ indexSet in
+                                if let index = indexSet.first {
+                                    viewModel.deletePayment(index: index)
+                                }
+                            }
+                        } else {
+                            //empty
+                            Text("label_nopayments")
+                        }
+                    } header: {
+                        Text("label_payments")
+                    }
+                    .onAppear {
+                        if isFirstHomeOpen {
+                            router.route(to: \.welcome)
+                            isFirstHomeOpen = false
+                        }
+                    }
+                }
+            }
+        }
+        .navigationTitle("title_home")
+        .onAppear {
+            viewModel.loadData()
+        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(viewModel: HomeViewModel.init(managersContainer: .getForPreview()))
 }

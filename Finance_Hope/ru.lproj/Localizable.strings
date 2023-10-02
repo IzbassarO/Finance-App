@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Finance_Hope
+
+  Created by Izbassar on 02.10.2023.
+  
+*/
+//Home
+"label_home" = "Общий";
+"title_home" = "Главная";
+
+
+
+//About App
+"title_links" = "Ссылки";
+
+
+//Account
+"title_account" = "Аккаунт";
