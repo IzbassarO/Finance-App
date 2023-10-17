@@ -35,13 +35,13 @@ struct AccountView: View {
                             Text("")
                         }
                     } header: {
-                        Text("details_account").textCase(.none)
+                        Text("details_account".localized).textCase(.none)
                     }
                     
                     Section {
-                        Text("label_currency")
+                        Text("label_currency".localized)
                     } header: {
-                        Text("title_currency")
+                        Text("title_currency".localized)
                     }
                     .onTapGesture {
                         router.route(to: \.currencyEditor)

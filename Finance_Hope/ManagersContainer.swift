@@ -9,19 +9,28 @@ import Foundation
 
 final class ManagersContainer {
     private let paymentsManager: PaymentsManager
+    private let storageManager: StorageManager
     
     init(
-        paymentsManager: PaymentsManager
+        paymentsManager: PaymentsManager,
+        storageManager: StorageManager
     ) {
         self.paymentsManager = paymentsManager
+        self.storageManager = storageManager
     }
+    
     func getPaymentsManager() -> PaymentsManager {
         return paymentsManager
     }
     
+    func getStorageManager() -> StorageManager {
+        return storageManager
+    }
+    
     static func getForPreview() -> ManagersContainer {
         return ManagersContainer(
-            paymentsManager: PaymentsManager()
+            paymentsManager: PaymentsManager(),
+            storageManager: StorageManager()
         )
     }
 }

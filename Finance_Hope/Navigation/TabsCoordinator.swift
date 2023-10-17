@@ -31,11 +31,11 @@ final class TabsCoordinator: TabCoordinatable {
     }
     
     func makeStatistics() -> NavigationViewCoordinator<StatisticsCoordinator> {
-        return NavigationViewCoordinator(StatisticsCoordinator())
+        return NavigationViewCoordinator(StatisticsCoordinator(managerContainer: managersContainer))
     }
     
     func makeAccount() -> NavigationViewCoordinator<AccountCoordinator> {
-        return NavigationViewCoordinator(AccountCoordinator())
+        return NavigationViewCoordinator(AccountCoordinator(managersContainer: managersContainer))
     }
     
     @ViewBuilder func makeHomeTab(isActive: Bool) -> some View {

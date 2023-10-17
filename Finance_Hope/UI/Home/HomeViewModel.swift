@@ -14,6 +14,10 @@ class HomeViewModel: BaseViewModel {
     @Published private(set) var payments: [Payment] = []
     @Published private(set) var isLoading: Bool = true
     @Published private(set) var selectedFilter: String = Filter.all.rawValue
+    
+    private var paymentAdditions = PassthroughSubject<Payment, Never>()
+    private var paymentDeletions = PassthroughSubject<Payment, Never>()
+    
     override init(managersContainer: ManagersContainer) {
         self.balance = Balance(current: 0, income: 0, outcome: 0)
         super.init(managersContainer: managersContainer)
@@ -32,9 +36,9 @@ class HomeViewModel: BaseViewModel {
             }
             .store(in: &publishers)
         
-//        self.priceType = self.storageManager.getPriceType()
+        self.priceType = self.storageManager.getPriceType()
     }
-    
+
     /// Delete payment by index
     func deletePayment(index: Int) {
         self.paymentsManager.removePayment(index: index)
@@ -46,6 +50,9 @@ class HomeViewModel: BaseViewModel {
                 self.isLoading = false
             }
             .store(in: &self.publishers)
+        
+        // Send the deleted payment through the publisher
+        paymentDeletions.send(self.payments[index])
     }
     
     /// Add new payment
@@ -59,5 +66,8 @@ class HomeViewModel: BaseViewModel {
                 self.isLoading = false
             }
             .store(in: &self.publishers)
+        
+        // Send the added payment through the publisher
+        paymentAdditions.send(payment)
     }
 }

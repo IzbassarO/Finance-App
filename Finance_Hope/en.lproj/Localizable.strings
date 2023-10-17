@@ -38,6 +38,8 @@
 "label_currency" = "Change Currency";
 
 /* WELCOME*/
+"btn_startusign" = "Start using";
+
 "label_hello" = "Hello";
 "label_hello2" = "Welcome to the Financee app that will track all your money expenses and incomes. Good luck!";
 
@@ -51,3 +53,30 @@
 "hint_search" = "Search";
 "btn_reset" = "Reset";
 "btn_back" = "Back";
+
+/* SETTINGS*/
+"title_settings" = "Settings";
+"btn_currencychange" = "Select currency";
+"btn_notifchange" = "Notifications";
+"btn_aboutapp" = "About app";
+"title_selcurrency" = "Select currency";
+"label_allcurrencies" = "All";
+"btn_devaddpay" = "Add payment";
+
+"label_popular" = "Popular";
+
+/* DEFAULT */
+
+"btn_policy" = "Privacy Policy";
+"btn_terms" = "User Agreement";
+"label_links" = "Links";
+"label_info" = "About";
+
+"search_empty" = "Nothing found";
+
+"label_fullversion" = "Full version";
+
+/* ERRORS */
+"networkingerror_unknown" = "Unknown error";
+"currencieserror_notfounded" = "Currency not founded";
+"mathexpressionerror_invalid" = "Invalid expression";

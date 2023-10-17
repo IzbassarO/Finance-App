@@ -12,6 +12,16 @@ import SwiftUI
 final class AccountCoordinator: NavigationCoordinatable {
     let stack = NavigationStack(initial: \AccountCoordinator.main)
     
+    private let managersContainer: ManagersContainer
+    
+    private var currencyEditorViewModel: CurrencyEditorViewModel {
+        return CurrencyEditorViewModel.init(managersContainer: managersContainer)
+    }
+    
+    init(managersContainer: ManagersContainer) {
+        self.managersContainer = managersContainer
+    }
+    
     @Root var main = makeMain
     @Route(.push) var currencyEditor = makeCurrencyEditor
     @Route(.push) var aboutApp = makeAboutApp
@@ -22,7 +32,7 @@ final class AccountCoordinator: NavigationCoordinatable {
     }
     
     @ViewBuilder func makeCurrencyEditor() -> some View {
-        CurrencyEditorView()
+        CurrencyEditorView(viewModel: currencyEditorViewModel)
     }
     
     @ViewBuilder func makeAboutApp() -> some View {

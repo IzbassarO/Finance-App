@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct ExportablePayment: Codable {
+struct ExportablePayment: Identifiable {
+    var id = UUID().uuidString
     var date: String
     var about: String
     var price: Float

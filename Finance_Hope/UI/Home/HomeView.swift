@@ -29,7 +29,7 @@ struct HomeView: View {
                                 router.route(to: \.pushToPayment)
                             }
                     } header: {
-                        Text("label_home")
+                        Text("label_home".localized)
                     }
                     
                     Section {
@@ -49,10 +49,10 @@ struct HomeView: View {
                             }
                         } else {
                             //empty
-                            Text("label_nopayments")
+                            Text("label_nopayments".localized)
                         }
                     } header: {
-                        Text("label_payments")
+                        Text("label_payments".localized)
                     }
                     .onAppear {
                         if isFirstHomeOpen {
@@ -63,7 +63,7 @@ struct HomeView: View {
                 }
             }
         }
-        .navigationTitle("title_home")
+        .navigationTitle("title_home".localized)
         .onAppear {
             viewModel.loadData()
         }

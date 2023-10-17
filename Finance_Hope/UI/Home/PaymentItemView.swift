@@ -12,7 +12,6 @@ struct PaymentItemView: View {
     var priceType: String
     var body: some View {
         HStack {
-
             VStack {
                 Text(payment.name ?? "No name")
                     .bold()

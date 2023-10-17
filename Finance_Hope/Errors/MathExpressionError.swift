@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum MathExpressionError: LocalizedError {
     case invalidExpression
@@ -14,9 +15,9 @@ enum MathExpressionError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidExpression:
-            return "mathexpressionerror_invalid"
-        case .invalidOperator(let opera):
-            return "mathexpressionerror_invalidoperator".localizedWithPlaceholder(arguments: opera)
+            return "mathexpressionerror_invalid".localized
+        case .invalidOperator:
+            return "mathexpressionerror_invalidoperator".localized
         }
     }
 }

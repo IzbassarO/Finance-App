@@ -12,10 +12,6 @@ extension String {
     public var localized: String {
         return NSLocalizedString(self, bundle: Bundle(for: BundleClass.self), comment: "")
     }
-    
-    public func localizedWithPlaceholder(arguments: CVarArg...) -> String {
-        return String(format: self, arguments)
-    }
 }
 
 private class BundleClass { }

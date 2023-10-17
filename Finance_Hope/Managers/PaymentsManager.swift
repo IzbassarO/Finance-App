@@ -40,14 +40,21 @@ struct PaymentsManager {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Payment")
         request.sortDescriptors = [NSSortDescriptor(keyPath: \Payment.date, ascending: true)]
         do {
-            let arr = try viewContext.fetch(request) as? [Payment]
-            if let arr = arr {
-                return arr.reversed()
+            let array = try viewContext.fetch(request) as? [Payment]
+            if let array = array {
+                return array.reversed()
             }
         } catch let err {
             print("Failed to get an index of payment. \(err)")
         }
         
         return []
+    }
+    
+    /// Remove all payments
+    func removeAll() {
+        getPayments().forEach { _ in
+            removePayment(index: 0)
+        }
     }
 }

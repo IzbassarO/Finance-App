@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A81B502198C2ACD09D345A5 /* Pods_Finance_Hope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CD5F91E39468EE5B0CC9EB /* Pods_Finance_Hope.framework */; };
+		A22671A32ADC296200D07BE3 /* ViewMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22671A22ADC296200D07BE3 /* ViewMonth.swift */; };
+		A248C4552AD85CBD00A826CE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C4542AD85CBD00A826CE /* StorageManager.swift */; };
+		A248C4572AD8605900A826CE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C4562AD8605900A826CE /* SearchBarView.swift */; };
+		A248C4592AD862F900A826CE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A248C4582AD862F900A826CE /* Launch Screen.storyboard */; };
+		A248C45B2AD867D100A826CE /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C45A2AD867D100A826CE /* Toast.swift */; };
+		A248C45E2ADA87BB00A826CE /* TransactionBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C45D2ADA87BB00A826CE /* TransactionBarChartView.swift */; };
+		A248C4622ADA8A6900A826CE /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = A248C4612ADA8A6900A826CE /* DGCharts */; };
+		A248C4642ADA8A6900A826CE /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A248C4632ADA8A6900A826CE /* DGChartsDynamic */; };
+		A248C4662ADA8B9B00A826CE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C4652ADA8B9B00A826CE /* Transaction.swift */; };
+		A248C4682ADA97C000A826CE /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C4672ADA97C000A826CE /* ContentView2.swift */; };
+		A248C48B2ADABE5B00A826CE /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248C48A2ADABE5B00A826CE /* Double.swift */; };
 		A2FB36CC2AC9999F005E7E20 /* Finance_HopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36CB2AC9999F005E7E20 /* Finance_HopeApp.swift */; };
 		A2FB36CE2AC9999F005E7E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB36CD2AC9999F005E7E20 /* ContentView.swift */; };
 		A2FB36D02AC999A1005E7E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FB36CF2AC999A1005E7E20 /* Assets.xcassets */; };
@@ -59,6 +71,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EB50F854DCE8CA38F2F1EA8 /* Pods-Finance_Hope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance_Hope.debug.xcconfig"; path = "Target Support Files/Pods-Finance_Hope/Pods-Finance_Hope.debug.xcconfig"; sourceTree = "<group>"; };
+		59CD5F91E39468EE5B0CC9EB /* Pods_Finance_Hope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_Hope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0CC7DA6B06B89B0B8114B7 /* Pods-Finance_Hope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance_Hope.release.xcconfig"; path = "Target Support Files/Pods-Finance_Hope/Pods-Finance_Hope.release.xcconfig"; sourceTree = "<group>"; };
+		A22671A22ADC296200D07BE3 /* ViewMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMonth.swift; sourceTree = "<group>"; };
+		A248C4542AD85CBD00A826CE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A248C4562AD8605900A826CE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		A248C4582AD862F900A826CE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A248C45A2AD867D100A826CE /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		A248C45D2ADA87BB00A826CE /* TransactionBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBarChartView.swift; sourceTree = "<group>"; };
+		A248C4652ADA8B9B00A826CE /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A248C4672ADA97C000A826CE /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		A248C48A2ADABE5B00A826CE /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		A2FB36C82AC9999F005E7E20 /* Finance_Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance_Hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FB36CB2AC9999F005E7E20 /* Finance_HopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance_HopeApp.swift; sourceTree = "<group>"; };
 		A2FB36CD2AC9999F005E7E20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,18 +140,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A248C4642ADA8A6900A826CE /* DGChartsDynamic in Frameworks */,
 				A2FB36EA2AC9AF56005E7E20 /* Stinsen in Frameworks */,
+				A248C4622ADA8A6900A826CE /* DGCharts in Frameworks */,
+				7A81B502198C2ACD09D345A5 /* Pods_Finance_Hope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A248C45C2ADA87A400A826CE /* Temporary Changes */ = {
+			isa = PBXGroup;
+			children = (
+				A248C45D2ADA87BB00A826CE /* TransactionBarChartView.swift */,
+				A248C4652ADA8B9B00A826CE /* Transaction.swift */,
+				A248C4672ADA97C000A826CE /* ContentView2.swift */,
+			);
+			path = "Temporary Changes";
+			sourceTree = "<group>";
+		};
+		A248C4692ADA9D2600A826CE /* Temporary Changes2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Temporary Changes2";
+			sourceTree = "<group>";
+		};
+		A248C48E2ADAD11300A826CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A22671A22ADC296200D07BE3 /* ViewMonth.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A2FB36BF2AC9999F005E7E20 = {
 			isa = PBXGroup;
 			children = (
 				A2FB36CA2AC9999F005E7E20 /* Finance_Hope */,
 				A2FB36C92AC9999F005E7E20 /* Products */,
+				D58852DB44CC6C8217D39E9B /* Pods */,
+				FE7655D29721C6392F687F25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +196,8 @@
 		A2FB36CA2AC9999F005E7E20 /* Finance_Hope */ = {
 			isa = PBXGroup;
 			children = (
+				A248C4692ADA9D2600A826CE /* Temporary Changes2 */,
+				A248C45C2ADA87A400A826CE /* Temporary Changes */,
 				A2FB36CB2AC9999F005E7E20 /* Finance_HopeApp.swift */,
 				A2FB36CD2AC9999F005E7E20 /* ContentView.swift */,
 				A2FB37462ACACF35005E7E20 /* Publishers */,
@@ -160,6 +216,7 @@
 				A2FB37402ACAC9EF005E7E20 /* BaseViewModel.swift */,
 				A2FB37592ACB54CA005E7E20 /* MathematicalExpression.swift */,
 				A2FB37352ACAB740005E7E20 /* Localizable.strings */,
+				A248C4582AD862F900A826CE /* Launch Screen.storyboard */,
 			);
 			path = Finance_Hope;
 			sourceTree = "<group>";
@@ -193,6 +250,7 @@
 				A2FB36EC2AC9B3D8005E7E20 /* Account */,
 				A2FB36EB2AC9B3CF005E7E20 /* Statistics */,
 				A2FB36E42AC9AE0E005E7E20 /* Home */,
+				A248C4562AD8605900A826CE /* SearchBarView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -222,6 +280,7 @@
 		A2FB36EB2AC9B3CF005E7E20 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				A248C48E2ADAD11300A826CE /* Model */,
 				A2FB36ED2AC9B3EB005E7E20 /* StatisticsView.swift */,
 				A2FB36F22AC9B42A005E7E20 /* StatisticsViewModel.swift */,
 			);
@@ -305,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FB373C2ACAC755005E7E20 /* PaymentsManager.swift */,
+				A248C4542AD85CBD00A826CE /* StorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -324,6 +384,8 @@
 				A2FB375D2ACB554D005E7E20 /* String+Ext.swift */,
 				A2FB375F2ACB5B46005E7E20 /* Payment.swift */,
 				A2FB37632ACB5BDC005E7E20 /* Date.swift */,
+				A248C45A2AD867D100A826CE /* Toast.swift */,
+				A248C48A2ADABE5B00A826CE /* Double.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -362,6 +424,23 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		D58852DB44CC6C8217D39E9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB50F854DCE8CA38F2F1EA8 /* Pods-Finance_Hope.debug.xcconfig */,
+				5C0CC7DA6B06B89B0B8114B7 /* Pods-Finance_Hope.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE7655D29721C6392F687F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59CD5F91E39468EE5B0CC9EB /* Pods_Finance_Hope.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +448,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2FB36D62AC999A1005E7E20 /* Build configuration list for PBXNativeTarget "Finance_Hope" */;
 			buildPhases = (
+				DE9674475C243A7C416C3D72 /* [CP] Check Pods Manifest.lock */,
 				A2FB36C42AC9999F005E7E20 /* Sources */,
 				A2FB36C52AC9999F005E7E20 /* Frameworks */,
 				A2FB36C62AC9999F005E7E20 /* Resources */,
@@ -380,6 +460,8 @@
 			name = Finance_Hope;
 			packageProductDependencies = (
 				A2FB36E92AC9AF56005E7E20 /* Stinsen */,
+				A248C4612ADA8A6900A826CE /* DGCharts */,
+				A248C4632ADA8A6900A826CE /* DGChartsDynamic */,
 			);
 			productName = Finance_Hope;
 			productReference = A2FB36C82AC9999F005E7E20 /* Finance_Hope.app */;
@@ -412,6 +494,7 @@
 			mainGroup = A2FB36BF2AC9999F005E7E20;
 			packageReferences = (
 				A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */,
+				A248C4602ADA8A6900A826CE /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = A2FB36C92AC9999F005E7E20 /* Products */;
 			projectDirPath = "";
@@ -429,29 +512,59 @@
 			files = (
 				A2FB36D32AC999A1005E7E20 /* Preview Assets.xcassets in Resources */,
 				A2FB37332ACAB740005E7E20 /* Localizable.strings in Resources */,
+				A248C4592AD862F900A826CE /* Launch Screen.storyboard in Resources */,
 				A2FB36D02AC999A1005E7E20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE9674475C243A7C416C3D72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Finance_Hope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2FB36C42AC9999F005E7E20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A248C4682ADA97C000A826CE /* ContentView2.swift in Sources */,
 				A2FB372B2ACAB3BA005E7E20 /* Currencies.swift in Sources */,
+				A248C45B2AD867D100A826CE /* Toast.swift in Sources */,
 				A2FB37522ACAD546005E7E20 /* PlayButton.swift in Sources */,
 				A2FB36CE2AC9999F005E7E20 /* ContentView.swift in Sources */,
 				A2FB375E2ACB554D005E7E20 /* String+Ext.swift in Sources */,
 				A2FB36E32AC99ABD005E7E20 /* HomeViewModel.swift in Sources */,
 				A2FB373F2ACAC973005E7E20 /* ManagersContainer.swift in Sources */,
 				A2FB36CC2AC9999F005E7E20 /* Finance_HopeApp.swift in Sources */,
+				A248C4572AD8605900A826CE /* SearchBarView.swift in Sources */,
 				A2FB373D2ACAC755005E7E20 /* PaymentsManager.swift in Sources */,
 				A2FB371C2ACAACCB005E7E20 /* AddPaymentView.swift in Sources */,
 				A2FB37622ACB5B88005E7E20 /* ExportablePayment.swift in Sources */,
 				A2FB36F52AC9B434005E7E20 /* AccountView.swift in Sources */,
 				A2FB37562ACAD58C005E7E20 /* CircularView.swift in Sources */,
+				A248C4662ADA8B9B00A826CE /* Transaction.swift in Sources */,
 				A2FB37662ACB5CB5005E7E20 /* PaymentItemView.swift in Sources */,
 				A2FB37682ACB5D8C005E7E20 /* Filter.swift in Sources */,
 				A2FB37082AC9BA17005E7E20 /* AccountCoordinator.swift in Sources */,
@@ -463,11 +576,14 @@
 				A2FB37482ACACF42005E7E20 /* BalancePublisher.swift in Sources */,
 				A2FB374A2ACACF61005E7E20 /* Balance.swift in Sources */,
 				A2FB37432ACACCBE005E7E20 /* Validator.swift in Sources */,
+				A248C45E2ADA87BB00A826CE /* TransactionBarChartView.swift in Sources */,
 				A2FB36F72AC9B446005E7E20 /* AccountViewModel.swift in Sources */,
 				A2FB372D2ACAB3E9005E7E20 /* Currency.swift in Sources */,
+				A248C48B2ADABE5B00A826CE /* Double.swift in Sources */,
 				A2FB37452ACACCD1005E7E20 /* PriceExpressionValidator.swift in Sources */,
 				A2FB36DC2AC99A10005E7E20 /* Model.xcdatamodeld in Sources */,
 				A2FB37302ACAB412005E7E20 /* CurrenciesError.swift in Sources */,
+				A22671A32ADC296200D07BE3 /* ViewMonth.swift in Sources */,
 				A2FB37412ACAC9EF005E7E20 /* BaseViewModel.swift in Sources */,
 				A2FB37182ACAAC98005E7E20 /* WelcomeViewModel.swift in Sources */,
 				A2FB37582ACAE95D005E7E20 /* DeveloperViewModel.swift in Sources */,
@@ -485,6 +601,7 @@
 				A2FB36E12AC99AAA005E7E20 /* HomeView.swift in Sources */,
 				A2FB36DE2AC99A43005E7E20 /* PersistenceController.swift in Sources */,
 				A2FB36F32AC9B42A005E7E20 /* StatisticsViewModel.swift in Sources */,
+				A248C4552AD85CBD00A826CE /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +743,7 @@
 		};
 		A2FB36D72AC999A1005E7E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB50F854DCE8CA38F2F1EA8 /* Pods-Finance_Hope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -638,8 +756,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +773,7 @@
 		};
 		A2FB36D82AC999A1005E7E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0CC7DA6B06B89B0B8114B7 /* Pods-Finance_Hope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,8 +786,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,6 +825,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A248C4602ADA8A6900A826CE /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:rundfunk47/stinsen.git";
@@ -717,6 +844,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A248C4612ADA8A6900A826CE /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A248C4602ADA8A6900A826CE /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		A248C4632ADA8A6900A826CE /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A248C4602ADA8A6900A826CE /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
 		A2FB36E92AC9AF56005E7E20 /* Stinsen */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A2FB36E82AC9AF56005E7E20 /* XCRemoteSwiftPackageReference "stinsen" */;

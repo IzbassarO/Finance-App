@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "charts",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:danielgindi/Charts.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e516b04834b6e2072367f1366750c01c164e6545"
+      }
+    },
+    {
+      "identity" : "stinsen",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:rundfunk47/stinsen.git",
+      "state" : {
+        "revision" : "91ddedb7d86c7d3aa2d0dd281f1113ebae256324",
+        "version" : "2.0.13"
+      }
+    }
+  ],
+  "version" : 2
+}

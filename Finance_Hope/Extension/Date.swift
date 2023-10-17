@@ -23,4 +23,17 @@ extension Date {
         dateFormatter.dateFormat = "dd.MM.yyyy hh:mm:ss"
         return dateFormatter.string(from: date)
     }
+    
+    func monthValue() -> Int {
+        return Calendar.current.component(.month, from: self)
+    }
+    
+    func yearValue() -> Int {
+        return Calendar.current.component(.year, from: self)
+    }
+    
+    static func from(year: Int, month: Int, day: Int) -> Date {
+        let components = DateComponents(year: year, month: month, day: day)
+        return Calendar.current.date(from: components)!
+    }
 }

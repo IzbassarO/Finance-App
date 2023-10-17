@@ -11,12 +11,17 @@ import SwiftUI
 struct Finance_HopeApp: App {
     // managers
     private let paymentManager: PaymentsManager
+    private let storageManager: StorageManager
     
     private let managersContainer: ManagersContainer
     
     init() {
         self.paymentManager = PaymentsManager()
-        self.managersContainer = ManagersContainer(paymentsManager: paymentManager)
+        self.storageManager = StorageManager()
+        self.managersContainer = ManagersContainer(
+            paymentsManager: paymentManager,
+            storageManager: storageManager
+        )
     }
     var body: some Scene {
         WindowGroup {
